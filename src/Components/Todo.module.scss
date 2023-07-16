@@ -1,0 +1,130 @@
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 736px;
+    margin: 0 auto;
+}
+
+.taskForm {
+    margin-top: -1.6875rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.taskForm input {
+    padding: 1rem;
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid var(--grey-700);
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.taskForm input::placeholder {
+    color: var(--gray-300);
+}
+
+.taskForm button[type="submit"] {
+    padding: 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    background: var(--blue-dark);
+    border: none;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.1s ease-in-out;
+}
+
+.taskForm button[type="submit"]:hover {
+    background: var(--blue);
+}
+
+.taskListContainer {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.infoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.infoContainer p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.infoContainer div:first-child p {
+    color: var(--blue);
+}
+
+.infoContainer div:last-child p {
+    color: var(--purple);
+}
+
+.infoContainer p span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+
+    border-radius: 999px;
+    background: var(--gray-400);
+    color: var(--gray-200);
+
+    font-size: 0.75rem;
+}
+
+.noTasksMessage {
+    width: 100%;
+    display: flex;
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.taskList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
